@@ -1,0 +1,81 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   }
+html {
+   font-size: 62.5%;
+   font-family: "Playfair Display", serif;   }
+@media (max-width : 768px ) {
+   html {
+      font-size: 43.75%;
+   }}
+body {
+   width: 100%;
+   background-color: #bbc6fa ;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;   }
+/*---------------------*/
+.quote {
+   width: 50rem;
+   background-color: white;
+   padding: 5rem 3rem ;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 3rem;
+   border-radius: 3rem;   }
+.quote h2 {
+   font-size: 3rem;
+   bottom: 2rem;
+   position: relative;   }
+.quote h2::after {
+   content: "";
+   position: absolute;
+   bottom: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 0.3rem;
+   width: 7.5rem;
+   border-radius: .3rem; 
+   background-color: rgb(23, 124, 229);   }
+.quote blockquote {
+   font-size: 2.5rem;
+   line-height: 1.6;   }
+.quote span {
+   display: block;
+   width: fit-content;
+   margin-left: auto;
+   font-size: 2rem;
+   position: relative;    }
+.quote span::after {
+   content: "";
+   position: absolute;
+   left: -3rem;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 2rem;
+   height: 0.3rem;
+   background-color: rgb(23, 124, 229);   }
+.quote .btns {
+   display: flex;
+   gap: 2rem;   }
+.quote .btns button {
+   line-height: 5rem;
+   background-color: rgb(23, 124, 229);
+   color: white;
+   padding: 0 3rem;
+   border-radius: 2.5rem;
+   font-size: 2rem;
+   border: 0;
+   outline: 0;
+   cursor: pointer;   }
+.quote .btns #btnTwitter {
+   background-color: white;
+   color: rgb(23, 124, 229) ;
+   border: 1px solid rgb(23, 124, 229) ;
+   display: flex;
+   align-items: center;
+   gap: 1rem;   }
+/*--------------------------*/
